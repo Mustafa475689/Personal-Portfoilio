@@ -8,6 +8,7 @@ import snake from "../../Assets/Projects/snake.png"; // snake game
 import typing from "../../Assets/Projects/typing.png"; // typing test
 import todo from "../../Assets/Projects/to do list.png"; // todo list
 import memory from "../../Assets/Projects/memory.png"; // memory
+import foodApp from "../../Assets/Projects/foodapp.png"; // foodApp
 
 function Projects() {
   return (
@@ -21,6 +22,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+       
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={foodApp}
+              isBlog={false}
+              title="Food app (React js)"
+              description="A complete frontend website made by react js."
+              ghLink="https://github.com/Mustafa475689/Static-food-site"
+              demoLink="https://static-food-site.vercel.app/"
+            />
+          </Col>
+       
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={typing}
