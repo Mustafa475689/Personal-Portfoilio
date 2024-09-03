@@ -9,6 +9,7 @@ import typing from "../../Assets/Projects/typing.png"; // typing test
 import todo from "../../Assets/Projects/to do list.png"; // todo list
 import memory from "../../Assets/Projects/memory.png"; // memory
 import foodApp from "../../Assets/Projects/foodapp.png"; // foodApp
+import codepen from "../../Assets/Projects/codeEditor.png"; // codepen
 
 function Projects() {
   return (
@@ -34,6 +35,17 @@ function Projects() {
             />
           </Col>
        
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codepen}
+              isBlog={false}
+              title="Code-pen-clone (React js)"
+              description="A simple clone web application where users can build websites using HTML, CSS, and JavaScript."
+              ghLink="https://github.com/Mustafa475689/Code-pen-clone-React-Js"
+              demoLink="https://github.com/Mustafa475689/Code-pen-clone-React-Js"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={typing}
